@@ -5,6 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.List;
 
 @Document(collection = "brand")
 public class Brand implements Serializable {
@@ -14,6 +15,8 @@ public class Brand implements Serializable {
     private String name;
 
     private String text;
+
+    private List<String> piece_id;
 
     public String getName() {
         return name;
@@ -29,5 +32,13 @@ public class Brand implements Serializable {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public List<String> getPiece_id() {
+        return piece_id;
+    }
+
+    public void setPiece_id(List<String> piece_id) {
+        this.piece_id = piece_id;
     }
 }
