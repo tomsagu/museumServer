@@ -19,11 +19,11 @@ public class Piece implements Serializable {
     private String text;
     private String year;
     private Date createdate;
-    private List<String> image;
     private String qr;
     private String room_name;
-    private List<String> type_name;
     private String brand_name;
+    private List<String> images;
+    private List<String> types;
 
     public String getId() {
         return id;
@@ -65,14 +65,6 @@ public class Piece implements Serializable {
         this.createdate = createdate;
     }
 
-    public List<String> getImage() {
-        return image;
-    }
-
-    public void setImage(List<String> image) {
-        this.image = image;
-    }
-
     public String getQr() {
         return qr;
     }
@@ -89,19 +81,27 @@ public class Piece implements Serializable {
         this.room_name = room_name;
     }
 
-    public List<String> getType_name() {
-        return type_name;
-    }
-
-    public void setType_name(List<String> type_name) {
-        this.type_name = type_name;
-    }
-
     public String getBrand_name() {
         return brand_name;
     }
 
     public void setBrand_name(String brand_name) {
         this.brand_name = brand_name;
+    }
+
+    public List<String> getImages() {
+        return images;
+    }
+
+    public void setImages(List<String> images) {
+        this.images = images;
+    }
+
+    public List<String> getTypes() {
+        return types;
+    }
+
+    public void setTypes(List<String> types) {
+        this.types = types;
     }
 }

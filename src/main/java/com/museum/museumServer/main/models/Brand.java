@@ -16,7 +16,7 @@ public class Brand implements Serializable {
 
     private String text;
 
-    private List<String> piece_id;
+    private List<String> pieces;
 
     public String getName() {
         return name;
@@ -34,11 +34,11 @@ public class Brand implements Serializable {
         this.text = text;
     }
 
-    public List<String> getPiece_id() {
-        return piece_id;
+    public List<String> getPieces() {
+        return pieces;
     }
 
-    public void setPiece_id(List<String> piece_id) {
-        this.piece_id = piece_id;
+    public void setPieces(List<String> pieces) {
+        this.pieces = pieces;
     }
 }

@@ -6,7 +6,7 @@ public class Article {
 
     private String name;
     private String text;
-    private List<String> image;
+    private List<String> images;
 
     public String getName() {
         return name;
@@ -24,11 +24,11 @@ public class Article {
         this.text = text;
     }
 
-    public List<String> getImage() {
-        return image;
+    public List<String> getImages() {
+        return images;
     }
 
-    public void setImage(List<String> image) {
-        this.image = image;
+    public void setImages(List<String> images) {
+        this.images = images;
     }
 }
