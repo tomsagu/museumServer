@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
-@org.springframework.data.mongodb.core.mapping.Document(collection = "piece")
+@org.springframework.data.mongodb.core.mapping.Document(collection = "document")
 public class Document implements Serializable {
     @Id
     @NotNull
@@ -14,6 +14,7 @@ public class Document implements Serializable {
 
     private String name;
     private String imagedoc;
+    private String text;
     private List<Article> articles;
 
 
@@ -47,5 +48,13 @@ public class Document implements Serializable {
 
     public void setArticles(List<Article> articles) {
         this.articles = articles;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }
