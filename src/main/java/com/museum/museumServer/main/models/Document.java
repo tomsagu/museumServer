@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
-@org.springframework.data.mongodb.core.mapping.Document(collection = "collection")
+@org.springframework.data.mongodb.core.mapping.Document(collection = "document")
 public class Document implements Serializable {
     @Id
     @NotNull
