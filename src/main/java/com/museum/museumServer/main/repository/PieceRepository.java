@@ -15,7 +15,14 @@ import java.util.List;
 @Repository
 public interface PieceRepository extends MongoRepository<Piece, Serializable> {
 
-@RestResource(path="name", rel="name")
-public List<Piece> findByName(@Param("name")String name, Pageable pageable);
 
+List<Piece> findByName(@Param("name")String name, Pageable pageable);
+
+List<Piece> findByTypesContains(@Param("types")String[] types);
+
+List<Piece> findByYearBetween(@Param("minyear")String minyear, @Param("maxyear")String maxyear);
+
+List<Piece> findByBrand(@Param("brandname")String brandname);
+
+List<Piece> findByYearBetweenAndTypesContainsAndBrandLike(@Param("minyear")String minyear, @Param("maxyear")String maxyear,@Param("types")String[] types,@Param("brandname")String brandname);
 }
