@@ -21,8 +21,8 @@ public class Piece implements Serializable {
     private String year;
     private Date createdate;
     private String qr;
-    private String room_name;
-    private String brand_name;
+    private String room;
+    private String brand;
     private List<String> images;
     private List<String> types;
 
@@ -74,20 +74,20 @@ public class Piece implements Serializable {
         this.qr = qr;
     }
 
-    public String getRoom_name() {
-        return room_name;
+    public String getRoom() {
+        return room;
     }
 
-    public void setRoom_name(String room_name) {
-        this.room_name = room_name;
+    public void setRoom(String room) {
+        this.room = room;
     }
 
-    public String getBrand_name() {
-        return brand_name;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setBrand_name(String brand_name) {
-        this.brand_name = brand_name;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public List<String> getImages() {
