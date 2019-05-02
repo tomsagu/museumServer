@@ -2,6 +2,7 @@ package com.museum.museumServer.main.repository;
 
 import com.museum.museumServer.main.models.Piece;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RestResource;
@@ -25,4 +26,6 @@ List<Piece> findByYearBetween(@Param("minyear")String minyear, @Param("maxyear")
 List<Piece> findByBrand(@Param("brandname")String brandname);
 
 List<Piece> findByYearBetweenAndTypesContainsAndBrandLike(@Param("minyear")String minyear, @Param("maxyear")String maxyear,@Param("types")String[] types,@Param("brandname")String brandname);
+
+
 }
