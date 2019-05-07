@@ -23,6 +23,8 @@ public class Piece implements Serializable {
     private String qr;
     private String room;
     private String brand;
+    private String visits;
+    private String donor;
     private List<String> images;
     private List<String> types;
 
@@ -88,6 +90,22 @@ public class Piece implements Serializable {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public String getVisits() {
+        return visits;
+    }
+
+    public void setVisits(String visits) {
+        this.visits = visits;
+    }
+
+    public String getDonor() {
+        return donor;
+    }
+
+    public void setDonor(String donor) {
+        this.donor = donor;
     }
 
     public List<String> getImages() {
