@@ -27,5 +27,11 @@ List<Piece> findByBrand(@Param("brandname")String brandname);
 
 List<Piece> findByYearBetweenAndTypesContainsAndBrandLike(@Param("minyear")String minyear, @Param("maxyear")String maxyear,@Param("types")String[] types,@Param("brandname")String brandname);
 
+List<Piece> findByYearBetweenAndTypesContains(@Param("minyear")String minyear, @Param("maxyear")String maxyear,@Param("types")String[] types);
+
+List<Piece> findByYearBetweenAndBrandLike(@Param("minyear")String minyear, @Param("maxyear")String maxyear,@Param("brandname")String brandname);
+
+List<Piece> findByNameLikeOrTextLike(@Param("word")String word, @Param("word1")String word1);
+
 
 }
