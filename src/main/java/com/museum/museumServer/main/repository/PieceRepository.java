@@ -21,6 +21,8 @@ List<Piece> findByName(@Param("name")String name, Pageable pageable);
 
 List<Piece> findByTypesContains(@Param("types")String[] types);
 
+List<Piece> findByRoom(@Param("room")String room);
+
 List<Piece> findByYearBetween(@Param("minyear")String minyear, @Param("maxyear")String maxyear);
 
 List<Piece> findByBrand(@Param("brandname")String brandname);
