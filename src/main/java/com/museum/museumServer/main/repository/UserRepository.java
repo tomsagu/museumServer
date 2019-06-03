@@ -14,4 +14,6 @@ import java.io.Serializable;
 public interface UserRepository extends MongoRepository<User, Serializable>{
     User findByUsernameAndPassword(@Param("username")String username, @Param("password")String password);
 
+    User findByUsername(@Param("username")String username);
+
 }

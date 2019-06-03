@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import java.io.Serializable;
 
 @CrossOrigin
+
 @Repository
 public interface RoomRepository extends MongoRepository<Room, Serializable> {
 }

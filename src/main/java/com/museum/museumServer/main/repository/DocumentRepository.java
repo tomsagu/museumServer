@@ -12,6 +12,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @CrossOrigin
+
 @Repository
 public interface DocumentRepository extends MongoRepository<Document, Serializable>{
 
