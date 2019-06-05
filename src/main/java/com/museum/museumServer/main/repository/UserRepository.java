@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import java.io.Serializable;
 
 
-@CrossOrigin
 @Repository
 public interface UserRepository extends MongoRepository<User, Serializable>{
     User findByUsernameAndPassword(@Param("username")String username, @Param("password")String password);

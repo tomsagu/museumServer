@@ -18,7 +18,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collections;
 
-@CrossOrigin
 public class LoginFilter extends AbstractAuthenticationProcessingFilter {
 
     public LoginFilter(String url, AuthenticationManager authManager) {

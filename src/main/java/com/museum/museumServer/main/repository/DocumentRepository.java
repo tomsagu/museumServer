@@ -6,11 +6,11 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.io.Serializable;
 import java.util.List;
 
-@CrossOrigin
 
 @Repository
 public interface DocumentRepository extends MongoRepository<Document, Serializable>{

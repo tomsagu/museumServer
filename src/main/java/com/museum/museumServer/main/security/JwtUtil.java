@@ -12,7 +12,6 @@ import java.util.Date;
 
 import static java.util.Collections.emptyList;
 
-@CrossOrigin
 public class JwtUtil {
 
     // Método para crear el JWT y enviarlo al cliente en el header de la respuesta

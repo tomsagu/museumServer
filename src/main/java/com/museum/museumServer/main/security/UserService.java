@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin
 @Service
 public class UserService implements UserDetailsService {
 

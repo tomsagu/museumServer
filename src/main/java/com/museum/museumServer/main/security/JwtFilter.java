@@ -17,7 +17,6 @@ import java.io.IOException;
  * el cuál se encarga de pasar el "request" a nuestra clase de utilidad JwtUtil
  * para que valide el token.
  */
-@CrossOrigin
 public class JwtFilter extends GenericFilterBean {
 
     @Override
