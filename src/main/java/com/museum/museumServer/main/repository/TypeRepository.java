@@ -12,5 +12,5 @@ import java.util.List;
 @CrossOrigin
 @Repository
 public interface TypeRepository extends MongoRepository<Type, Serializable> {
-    List<Type> findByNameLike(@Param("word")String word);
+    List<Type> findByNameLikeIgnoreCase(@Param("word")String word);
 }

@@ -12,5 +12,5 @@ import java.util.List;
 @CrossOrigin
 @Repository
 public interface RoomRepository extends MongoRepository<Room, Serializable> {
-    List<Room> findByNameLikeOrTextLike(@Param("word")String word, @Param("word1")String word1);
+    List<Room> findByNameLikeIgnoreCaseOrTextLikeIgnoreCase(@Param("word")String word, @Param("word1")String word1);
 }
