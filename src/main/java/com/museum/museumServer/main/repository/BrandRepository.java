@@ -14,5 +14,5 @@ import java.util.List;
 @Repository
 public interface BrandRepository extends MongoRepository<Brand, Serializable> {
 
-    List<Brand> findByNameLikeOrTextLike(@Param("word")String word, @Param("word1")String word1);
+    List<Brand> findByNameLikeIgnoreCaseOrTextLikeIgnoreCase(@Param("word")String word, @Param("word1")String word1);
 }
