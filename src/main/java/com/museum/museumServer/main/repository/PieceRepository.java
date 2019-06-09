@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import java.io.Serializable;
 import java.util.List;
 
-@CrossOrigin
+
 @Repository
 public interface PieceRepository extends MongoRepository<Piece, Serializable> {
 
@@ -20,6 +20,8 @@ public interface PieceRepository extends MongoRepository<Piece, Serializable> {
 List<Piece> findByName(@Param("name")String name, Pageable pageable);
 
 List<Piece> findByTypesContains(@Param("types")String[] types);
+
+List<Piece> findByRoom(@Param("room")String room);
 
 List<Piece> findByYearBetween(@Param("minyear")String minyear, @Param("maxyear")String maxyear);
 
