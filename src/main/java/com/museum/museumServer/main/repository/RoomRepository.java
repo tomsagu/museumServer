@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import java.io.Serializable;
 import java.util.List;
 
-@CrossOrigin
+
 @Repository
 public interface RoomRepository extends MongoRepository<Room, Serializable> {
     List<Room> findByNameLikeIgnoreCaseOrTextLikeIgnoreCase(@Param("word")String word, @Param("word1")String word1);
