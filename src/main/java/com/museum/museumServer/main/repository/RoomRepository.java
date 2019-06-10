@@ -13,4 +13,6 @@ import java.util.List;
 @Repository
 public interface RoomRepository extends MongoRepository<Room, Serializable> {
     List<Room> findByNameLikeIgnoreCaseOrTextLikeIgnoreCase(@Param("word")String word, @Param("word1")String word1);
+
+    Room findByName(@Param("word")String word);
 }
